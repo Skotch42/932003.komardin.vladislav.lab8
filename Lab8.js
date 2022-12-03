@@ -6,14 +6,16 @@ function string()
     fr.appendChild(el);
 }
 
-function up(el) {
+function up(el) 
+{
     par = el.parentNode;
     var fr = document.getElementById('forma');
     var sosed = par.previousSibling;
     fr.insertBefore(par, sosed);
 }
 
-function down(el) {
+function down(el) 
+{
     par = el.parentNode;
     var fr = document.getElementById('forma');
     var sosed = par.nextSibling;
