@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Frontend Task №8</title>
+    <style>
+
+        body 
+        {
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .btn 
+        {
+            margin: -2.4px;
+        }
+
+        .btn.del 
+        {
+            font-size: 11.3px;
+        }
+
+        input 
+        {
+            margin: -3px;
+            text-align: center;
+        }
+
+        .button 
+        {
+            display: block;
+        }
+
+        .fields:first-child 
+        {
+            display: none;
+        }
+
+        .save 
+        {
+            margin-top: 20px;
+            width: min-content;
+            padding: 0px;
+            margin: 0px;
+        }
+
+    </style>
+
+</head>
+<body>
+	<main>
+
+	<form id="forma">
+
+        <div class="fields">
+
+            <input type="text">
+            <input type="text">
+            <button class="btn" type="button" onclick="up(this)">&#8593</button>
+            <button class="btn" type="button" onclick="down(this)">&#8595</button>
+            <button class="btn del" type="button" onclick="del(this)">&#10006</button>
+
+        </div>
+
+    </form>
+
+        <button class="button" onclick="string()">Добавить элемент</button>
+        <button class="button" type="button" onclick="save()">Сохранить</button> 
+
+	</main>
+
+	<script src="Lab8.js"></script>
+</body>
+</html>
